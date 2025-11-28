@@ -5,50 +5,9 @@
     font-family: 'Inter', sans-serif;
 }
 
-:root {
-    --background: #0c0a09;
-    --text: #fafaf9;
-    --primary: #064e3b;
-    --secondary: #BABABA;
-    --accent: #ffffff;
+:root {}
+
+h1 {
+    text-align: center;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background);
-}
-
-.MainBlock {
-    display:grid;
-    grid-template-rows: 10% 30%;
-    grid-template-columns: 80%;
-    justify-content: center;
-}
-
-.TopWindow {
-    display: flex;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-color: var(--primary);
-    padding: 5%;
-}
-
-.Text-Main {
-    display: flex;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    background-color: aliceblue;
-    padding: 15%;
-}
-
-.SecondeBlock {
-    display:grid;
-    grid-template-rows: 10% 30%;
-    width: 30%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-}
