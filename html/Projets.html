@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="../css/Projets.css">
+    <link rel="icon" href="../icon/NomaiMask.webp">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../img/Home.png" alt="Homebutton" id="BoutonAcceuil">
+        </a>
+        <nav>
+            <a href="#Projet1">
+                <h3>Blackjack</h3>
+            </a>
+            <a href="#Projet2">
+                <h3>Encryptage nomai</h3>
+            </a>
+            <a href="#Projet3">
+                <h3>Eco RainWorld</h3>
+            </a>
+        </nav>
+        <h1>PROJETS</h1>
+    </header>
+    <main>
+        <section class="Projet1" id="Projet1">
+            <img src="../img/Blackjack.png" alt="BlackjackImages">
+            <div class="paragraphe" id="Paragraphe1">
+                <div class="Blockcode">
+                    class Card:
+                        def __init__(self, suit, rank):
+                            self.suit = suit
+                            self.rank = rank
+
+                        def __str__(self):
+                            return self.rank + " of " + self.suit
+
+
+                    class Deck:
+                        def __init__(self):
+                            self.deck = []  # start with an empty list
+                            for suit in suits:
+                                for rank in ranks:
+                                    self.deck.append(Card(suit, rank))
+
+                        def __str__(self):
+                            deck_comp = ""  # start with an empty string
+                            for card in self.deck:
+                                deck_comp += "\n " + card.__str__()  # add each Card object's print string
+                            return "The deck has:" + deck_comp
+
+                        def shuffle(self):
+                            random.shuffle(self.deck)
+
+                        def deal(self):
+                            single_card = self.deck.pop()
+                            return single_card
+
+
+
+                </div>
+                <div class="Explication">
+                    <h2>Projet Blackjack en Python:</h2>
+                    <p>Le Projets de l'implémentation du jeu de Blackjack et du jeu de la Bataille à etait pour moi
+                        une très bonne manière de developer mes competence en programation Python et au maniment d'un interface graphique.
+                        ce projet comporté l'implémentationdu Blackjack et de la bataille d'abord simplement en CLI(Command-line interface) et si le timing le permetté de faire l'interface graphique.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="Projet2" id="Projet2">
+            <div class="paragraphe">
+                <h2>Projet Codage d'information façon Nomai :</h2>
+                <p>Ce projet m’a appris à manipuler des bibliothèques graphiques afin de pouvoir encrypter et décrypter un message de manière visuelle, grâce à Python, un langage très adaptable à toutes sortes de tâches.
+                </p>
+                <ul>
+                    <li>Ce projet m’a aidé à structurer mon raisonnement, parce que la conception d’un algorithme capable de transformer un texte UTF‑8 et une seed en écriture nomai exige une approche claire et organisée.</li>
+                    <li>Il m’a permis de développer ma créativité technique en combinant logique, esthétique et contraintes pour reproduire un système d’écriture inspiré d’Outer Wilds.</li>
+                    <li>Il a renforcé ma confiance en mes compétences, car j’ai réussi à transformer une idée originale en un algorithme fonctionnel.</li>
+                </ul>
+            </div>
+            <img src="../img/Nomai3.svg" alt="NomaiLove" id="NomaiLove">
+        </section>
+        <section class="Projet3" id="Projet3">
+            <div class="paragraphe">
+                <h2>Ecosysteme Rain World :</h2>
+                <p id="psection3">Dans ce projet en Python, j’ai développé un écosystème inspiré de celui de Rain World, en m’appuyant sur les principes fondamentaux du Jeu de la vie de Conway. J’ai commencé par implémenter une grille évolutive où chaque cellule représente un élément de l’environnement ou une créature. J’ai conçu des règles d’interaction basées à la fois sur les comportements émergents du Jeu de la vie et sur des mécaniques propres à un écosystème plus riche, comme la prédation, la survie, l’adaptation ou encore la reproduction.
+
+                    J’ai également structuré le projet de manière modulaire afin de pouvoir ajouter ou modifier facilement des espèces, des comportements ou des paramètres environnementaux. Cela m’a permis d’expérimenter différentes dynamiques et d’observer comment des systèmes simples peuvent produire des phénomènes complexes.
+                    
+                    Ce projet m’a apporté une meilleure compréhension de la modélisation d’écosystèmes, de la programmation orientée objet et des comportements émergents. Il m’a aussi aidé à améliorer ma capacité à structurer un code évolutif, à tester des hypothèses et à analyser les résultats obtenus. En travaillant dessus, j’ai compris l’intérêt d’outils mathématiques et informatiques pour simuler des environnements vivants, et cela a renforcé ma motivation à créer des projets plus ambitieux autour de la simulation et de l’intelligence artificielle.</p>
+            </div>
+            <img src="../img/RainWorld.jpg" alt="Rainworld" id="Rainworld">
+        </section>
+    </main>
+</body>
+</html>

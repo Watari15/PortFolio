@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    /* COULEURS*/
+    --text-color: #ffffff;
+    --primary: #0077b6;
+    --secondary: #1A1D23;
+    --background: #000000;
+
+    /*POLICE TEXT*/
+    --bald-pixel: 'AriBald';
+    --font-pixel: 'AriCondensed';
+    --font-inscryption: 'Heavywei';
+
+    /*PADDING/MARGIN*/
+    --padding: 2%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: var(--secondary);
+}
+
+header {
+    display: flex;
+    border-left: solid 2px var(--text-color);
+    border-right: solid 3px var(--text-color);
+    padding: 1%;
+}
+
+header h1 {
+    font-size: 700%;
+    font-family: var(--font-inscryption);
+    margin-top: 5%;
+    color: var(--text-color);
+}
+
+.Grid {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(3,30%);
+    grid-template-columns: repeat(3,30%);
+    margin: 5%;
+    width: 40%;
+    gap: 10%;
+    border-top: solid 2px var(--primary);
+    border-right: solid 2px var(--primary);
+    border-left: solid 2px var(--primary);
+    border-radius: 8px;
+    padding: 3%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--text-color);
+}
+img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+#aBouton {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 2%;
+    width: 4%;
+}
+
+/*Reutilisation Code de index*/
+
+.Window2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    margin: 1%;
+    width: 25%;
+}
+
+.Overlay {
+    display: flex;
+    background-color: var(--text-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    padding: var(--padding);
+}
+
+.Contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--secondary);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 5%;
+    border: solid 1px var(--text-color);
+}
+
+#home {
+    display: flex;
+    width: 100%;
+    font-size: 70%;
+    justify-content: flex-end;
+    padding-right: 1%;
+    color: var(--primary);
+}
+
+h3 {
+    font-family: var(--font-inscryption);
+    color: var(--primary);
+    font-size: 180%;
+}
+
+@font-face {
+    font-family: 'Heavywei';
+    src: url(../font/HEAVYWEI.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 600px) {
+    .Grid {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 3%;
+    }
+    .Window2 {
+        width: 95%;
+        margin-bottom: 6%;
+    }
+    #aBouton {
+        margin: 0%;
+        margin-top: 10%;
+        margin-left: 3%;
+        width: 8%;
+    }
+}
