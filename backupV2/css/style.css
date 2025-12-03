@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    /* COULEURS*/
+    --text-color: #ffffff;
+    --primary: #0077b6;
+    --secondary: #1A1D23;
+    --background: #000000;
+
+    /*POLICE TEXT*/
+    --bald-pixel: 'AriBald';
+    --font-pixel: 'AriCondensed';
+
+    /*PADDING/MARGIN*/
+    --padding: 2%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--background);
+    background-image: url(../img/Background.webp);
+}
+
+.main {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*UTILITAIRE*/
+
+.Overlay {
+    display: flex;
+    background-color: var(--primary);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    padding: var(--padding);
+}
+
+.Contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--secondary);
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 5%;
+    border: solid 1px var(--primary);
+}
+
+#home {
+    display: flex;
+    width: 60%;
+    font-size: 70%;
+    justify-content: flex-end;
+    padding-right: 1%;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 40%;
+    gap: 3%;
+}
+
+.Rouge {
+    display: flex;
+    border-radius: 50px;
+    background-color: #ff0000;
+    padding: 4%;
+}
+.Orange {
+    display: flex;
+    border-radius: 50px;
+    background-color: orange;
+    padding: 4%;
+}
+.Vert {
+    display: flex;
+    border-radius: 50px;
+    background-color: #00c951;
+    padding: 4%;
+}
+
+/*PAGE*/
+
+.Window1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50%;
+}
+
+.BarNav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: solid 1px var(--primary);
+    background-color: var(--secondary);
+    margin-top: 60%;
+    padding: var(--padding);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.BarNav:hover {
+    border: solid 1px var(--text-color);
+}
+
+.BarNav a {
+    color: var(--primary);
+    font-size: 110%;
+    margin: 2%;
+    text-decoration: none;
+}
+
+.BarNav a:hover {
+    color: var(--text-color);
+}
+.Window2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    margin: 1%;
+}
+
+#BtnVert2 {
+    padding: 5%;
+}
+
+h1 {
+    color: var(--text-color);
+    font-family: var(--bald-pixel);
+}
+
+h3 {
+    color: var(--text-color);
+    font-family: var(--bald-pixel);
+}
+
+h3 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+p {
+    color: var(--text-color);
+    font-family: var(--font-pixel);
+}
+
+.GroupImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.GroupImg a {
+    display: flex;
+    justify-content: center;
+}
+
+a img {
+    width: 5%;
+}
+
+/*TEST FONT*/
+
+@font-face {
+    font-family: 'AriBald';
+    src: url(../font/Ari/ari-w9500-condensed-bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AriCondensed';
+    src: url(../font/Ari/ari-w9500-condensed.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: auto;
+    }
+
+    .Window1 {
+        padding-top: 10%;
+    }
+    .BarNav {
+        margin-top: 40%;
+    }
+}
